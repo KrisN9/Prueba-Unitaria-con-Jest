@@ -17,11 +17,11 @@ const fromEuroToDollar = (euro) => {
 }
 
 const fromDollarToYen = (dollar) => {
-    return dollar * oneEuroIs["JPY"];
+    return (dollar/euro) * oneEuroIs["JPY"];
 }
 
 const fromYenToPound = (yen) => {
-    return yen * oneEuroIs["GBP"];
+    return (yen/euro) * oneEuroIs["GBP"];
 }
 
 module.exports = {fromEuroToDollar, fromDollarToYen, fromYenToPound};
